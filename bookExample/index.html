@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="#"> <!-- Ссылочное отношение между текущим файлом и внешним файлом( в доанный момент это файл стилей)  -->
+    <title>HTML5</title>
+    <link rel="icon" href="nasa.png"><!-- Задает иконку в загривке страницы -->
+
+    <!--Ниже следующий скрипт учит IE до версии 9 новым эл-там html5
+    после этого скрипта их можно свободно использовать, к ним будут применяться стили css-->
+
+    <!--[if lt IE 9]>
+    <script>
+    var e = ("abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video").split(",");
+    for(var i = 0 ; i <e.length ; i++)
+      document.createElement(e[i]);
+    </script>
+    <!endIf-->
+
+    <!-- Готовая библиотека для целей изложенных выше -->
+
+    <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!endIf-->
+
+  </head>
+<body>
+  <header>
+  <time datetime="2016-09-21T12:32:06+03:00" pubdate>21 Сентября 2016 г.</time> <!-- параметр pubdate указывает когда был опубликован документ(весь),
+     ведь тег находится вне тега <article> -->
+    <hgroup>
+      <h1> Мой блог!</h2>
+      <h2>Немного текста в абзаце о моем блоге. Совсем немного.</h2>
+    </hgroup>
+    <nav>
+     <ul>
+     <li><a href="#">home</a></li>
+     <li><a href="#">blog</a></li>
+     <li><a href="#">gallery</a></li>
+     <li><a href="#">about</a></li>
+     </ul>
+   </nav>
+  </header>
+
+
+
+  <article>
+      <header>
+        <time datetime="2016-09-21T12:32:06+03:00" pubdate>21 Сентября 2016 г.</time> <!-- параметр pubdate указывает когда была опубликована статья,
+           ведь тег находится в теге <article> -->
+        <h1>
+          <a href = "#">Ссылка на этот пост</a>
+        </h1>
+      </header>
+  </article>
+
+  <footer>
+   <p>&#167;</p>
+   <p>&#169; 2001&#8211;9 <a href="#">Mark Pilgrim</a></p>
+ </footer>
+
+
+
+</body>
+
+
+</html>
